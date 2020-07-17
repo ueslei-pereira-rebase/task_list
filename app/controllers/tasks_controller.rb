@@ -1,6 +1,7 @@
 class TasksController < ApplicationController
 
-  
+  def new
+  end
 
   def create
     #Modo mais seguro para tratar os dados, formato adotado apratir da versao 4 do rails
