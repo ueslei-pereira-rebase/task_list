@@ -3,7 +3,7 @@
 
 <!--Comentario: nao desejamos imprimir a iteração (each), somente a descrição das tarefas -->
 <% if @tasks.empty? %>
-  <%= 'Nenhuma tarefa encontrada' %>
+  <%= 'Nenhuma tarefa encontrada' %><br>
 <% else %>
   <% @tasks.each do |task| %>
     <%= task.description %>
