@@ -3,6 +3,10 @@ class TasksController < ApplicationController
   def new
   end
 
+  def show
+    @task = Task.find(params[:id])
+  end
+
   def create
     #Modo mais seguro para tratar os dados, formato adotado apratir da versao 4 do rails
     @task = Task.new(params.require(:task).permit(:description, :status))
