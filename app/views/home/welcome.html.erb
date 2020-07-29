@@ -10,7 +10,8 @@
     <!--caminho para editar esse objeto especifico-->
     <%= link_to 'Editar' , edit_task_path(task) %> <!--#Controller + action => tasks#edit-->
     <!--#Controller + action c tasks#destroy-->
-    <%= link_to 'Apagar' , task_path(task), method: :delete, data: {confirm: 'Quer apagar essa tarefa?'} %><br>
+    <%= link_to 'Apagar' , task_path(task), method: :delete, data: {confirm: 'Quer apagar essa tarefa?'} %>
+    <%= link_to 'Mostrar' , task_path(task) %><br><!--#Controller + action => tasks#show->
   <% end %>
 <% end %>
 <%= link_to 'Adicionar tarefa', new_task_path %> <!--#Controller + action => c tasks#new-->
